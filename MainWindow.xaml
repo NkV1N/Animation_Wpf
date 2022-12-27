@@ -1,0 +1,159 @@
+﻿<Window x:Class="Animation_Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Animation_Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1300">
+    <Grid x:Name="Grid1">
+        <Grid.Background>
+            <ImageBrush ImageSource="/fon2.jpg"/>
+        </Grid.Background>
+        <Canvas Name="canvas" MouseMove="MouseMove">
+            <Canvas.Resources>
+                <PathGeometry x:Key="my_path">
+                    <PathFigure IsClosed="True" StartPoint="110,110">
+                        <ArcSegment Point="110,310" Size="100,100"></ArcSegment>
+                        <ArcSegment Point="310,310" Size="100,100"></ArcSegment>
+                        <ArcSegment Point="310,110" Size="100,100" ></ArcSegment>
+                        <ArcSegment Point="110,110" Size="100,100"></ArcSegment>
+                    </PathFigure>
+                </PathGeometry>
+                <PathGeometry x:Key="my_path2">
+                    <PathFigure IsClosed="True" StartPoint="600,110">
+                        <ArcSegment Point="600,200" Size="100,100"></ArcSegment>
+                        <ArcSegment Point="1200,200" Size="100,100"></ArcSegment>
+                        <ArcSegment Point="1200,110" Size="100,100" ></ArcSegment>
+                        <ArcSegment Point="600,110" Size="100,100"></ArcSegment>
+                    </PathFigure>
+                </PathGeometry>
+            </Canvas.Resources>
+            <TextBlock x:Name="Text1" Width="600" Height="87" FontSize="48" FontWeight="Bold" Canvas.Left="26" Canvas.Top="597" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="Gray" BlurRadius="5" ShadowDepth="15" Opacity="0.7" />
+                </TextBlock.Effect>
+                <TextBlock.Foreground>
+                    <LinearGradientBrush>
+                        <GradientStop Color="PeachPuff" Offset="0.0" />
+                        <GradientStop Color="Salmon" Offset="0.3" />
+                        <GradientStop Color="Orange" Offset="0.7" />
+                        <GradientStop Color="PeachPuff" Offset="1.0" />
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+                <TextBlock.Triggers>
+                    <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetName="Text1" 
+                                                 Storyboard.TargetProperty="(FrameworkElement.Width)" 
+                                                 To="0.0" Duration="0:0:3.5" AutoReverse="True" 
+                                                 RepeatBehavior="Forever" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </TextBlock.Triggers><Run Text="Счастливого нового года!"/>
+            </TextBlock>
+            <Image Name="elka" Source="/elka3.png" Width="439" Canvas.Top="116" Canvas.Left="1202" Height="531" HorizontalAlignment="Left" VerticalAlignment="Top" MouseLeftButtonDown="MouseLeftButtonDown"  MouseLeftButtonUp="MouseLeftButtonUp">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="178.397"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Name="elka2" Source="/kkk.png" Width="64" Canvas.Top="348" Canvas.Left="405" Height="68" HorizontalAlignment="Left" VerticalAlignment="Top" MouseLeftButtonDown="MouseLeftButtonDown"  MouseLeftButtonUp="MouseLeftButtonUp">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="179.861"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Name="elka3" Source="/фф.png" Width="125" Canvas.Top="457" Canvas.Left="253" Height="120" HorizontalAlignment="Left" VerticalAlignment="Top" MouseLeftButtonDown="MouseLeftButtonDown"  MouseLeftButtonUp="MouseLeftButtonUp">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="183.251"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Name="elka4" Source="/ва.png" Width="90" Canvas.Top="392" Canvas.Left="350" Height="85" HorizontalAlignment="Left" VerticalAlignment="Top" MouseLeftButtonDown="MouseLeftButtonDown"  MouseLeftButtonUp="MouseLeftButtonUp">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="196.045"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Name="elka5" Source="/укпкпа.png" Width="84" Canvas.Top="378" Canvas.Left="487" Height="69" HorizontalAlignment="Left" VerticalAlignment="Center" MouseLeftButtonDown="MouseLeftButtonDown"  MouseLeftButtonUp="MouseLeftButtonUp">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="206.136"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Name="elka6" Source="/ыуав.png" Width="97" Canvas.Top="313" Canvas.Left="335" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" MouseLeftButtonDown="MouseLeftButtonDown"  MouseLeftButtonUp="MouseLeftButtonUp">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="181.105"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Name="elka7" Source="/фвы.png" Width="124" Canvas.Top="472" Canvas.Left="360" Height="120" HorizontalAlignment="Left" VerticalAlignment="Center" MouseLeftButtonDown="MouseLeftButtonDown"  MouseLeftButtonUp="MouseLeftButtonUp">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="181.808"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Name="elka8" Source="/ыауа.png" Width="125" Canvas.Top="472" Canvas.Left="451" Height="120" HorizontalAlignment="Left" VerticalAlignment="Top" MouseLeftButtonDown="MouseLeftButtonDown"  MouseLeftButtonUp="MouseLeftButtonUp">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180.133"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image Name="elka9" Source="/выа.png" Width="125" Canvas.Top="197" Canvas.Left="447" Height="120" HorizontalAlignment="Left" VerticalAlignment="Top" MouseLeftButtonDown="MouseLeftButtonDown"  MouseLeftButtonUp="MouseLeftButtonUp">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="178.478"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+
+        </Canvas>
+    </Grid>
+</Window>

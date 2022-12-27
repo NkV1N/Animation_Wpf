@@ -1,0 +1,81 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bad.png" />
+    <None Remove="ball.png" />
+    <None Remove="christmas.png" />
+    <None Remove="clipart.png" />
+    <None Remove="elementspng.png" />
+    <None Remove="elka.png" />
+    <None Remove="elka3.png" />
+    <None Remove="fiv.png" />
+    <None Remove="fon.jpg" />
+    <None Remove="fon2.jpg" />
+    <None Remove="gifts.png" />
+    <None Remove="kissclipart.jpg" />
+    <None Remove="kkk.png" />
+    <None Remove="sani.png" />
+    <None Remove="santa.png" />
+    <None Remove="snow.jpg" />
+    <None Remove="snow.png" />
+    <None Remove="vvvvv.png" />
+    <None Remove="ва.png" />
+    <None Remove="впа.png" />
+    <None Remove="всса.png" />
+    <None Remove="выа.png" />
+    <None Remove="уаыва.png" />
+    <None Remove="укпкпа.png" />
+    <None Remove="уцыав.png" />
+    <None Remove="фвы.png" />
+    <None Remove="фф.png" />
+    <None Remove="цауыв.png" />
+    <None Remove="цфыв.png" />
+    <None Remove="ыауа.png" />
+    <None Remove="ывф.png" />
+    <None Remove="ыуаа.png" />
+    <None Remove="ыуав.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bad.png" />
+    <Resource Include="ball.png" />
+    <Resource Include="christmas.png" />
+    <Resource Include="clipart.png" />
+    <Resource Include="elementspng.png" />
+    <Resource Include="elka.png" />
+    <Resource Include="elka3.png" />
+    <Resource Include="fiv.png" />
+    <Resource Include="fon.jpg" />
+    <Resource Include="fon2.jpg" />
+    <Resource Include="gifts.png" />
+    <Resource Include="kissclipart.jpg" />
+    <Resource Include="kkk.png" />
+    <Resource Include="sani.png" />
+    <Resource Include="santa.png" />
+    <Resource Include="snow.png" />
+    <Resource Include="vvvvv.png" />
+    <Resource Include="ва.png" />
+    <Resource Include="впа.png" />
+    <Resource Include="всса.png" />
+    <Resource Include="выа.png" />
+    <Resource Include="уаыва.png" />
+    <Resource Include="укпкпа.png" />
+    <Resource Include="уцыав.png" />
+    <Resource Include="фвы.png" />
+    <Resource Include="фф.png" />
+    <Resource Include="цауыв.png" />
+    <Resource Include="цфыв.png" />
+    <Resource Include="ыауа.png" />
+    <Resource Include="ывф.png" />
+    <Resource Include="ыуаа.png" />
+    <Resource Include="ыуав.png" />
+  </ItemGroup>
+
+</Project>
